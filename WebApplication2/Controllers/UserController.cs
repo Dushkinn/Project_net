@@ -35,7 +35,7 @@ namespace WebApplication2.Controllers
         // GET: Language/Create
         public ActionResult Create()
         {
-            var roles = _dbContext.Roles.ToList();
+            var roles = _dbContext.UserRoles.ToList();
 
             ViewBag.Roles = new MultiSelectList(roles, "Role", "Name");
 
@@ -77,7 +77,7 @@ namespace WebApplication2.Controllers
         public ActionResult Edit(Guid id)
         {
             User user = _dbContext.Users.Where(c => c.ID == id).Include(c => c.Role).First();
-            var roles = _dbContext.Roles.ToList();
+            var roles = _dbContext.UserRoles.ToList();
 
             ViewBag.Roles = new MultiSelectList(roles, "Role", "Name");
 
@@ -86,8 +86,7 @@ namespace WebApplication2.Controllers
                 ID = Guid.NewGuid(),
                 FullName = user.FullName,
                 Password = user.Password,
-                UserRole = user.Role,
-                selectedRole = user.Role.Role
+                UserRole = user.Role
 
             });
         }
@@ -95,12 +94,20 @@ namespace WebApplication2.Controllers
         // POST: Language/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Guid id, Book book)
+        public ActionResult Edit(UserViewModel userViewModel)
         {
             try
             {
-                book.ID = id;
-                _dbContext.Books.Update(book);
+                UserRole userRole = _dbContext.UserRoles.Find(userViewModel.selectedRole);
+
+                User user = new User
+                {
+                    ID = userViewModel.ID,
+                    FullName = userViewModel.FullName,
+                    Password = userViewModel.Password,
+                    Role = userRole
+                };
+                _dbContext.Users.Update(user);
                 _dbContext.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
@@ -120,7 +127,7 @@ namespace WebApplication2.Controllers
         //POST: Language/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteBook(Guid id)
+        public ActionResult DeleteUser(Guid id)
         {
             try
             {

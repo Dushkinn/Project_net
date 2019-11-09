@@ -370,8 +370,6 @@ C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Raz
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Pages\Tag\asdf.cshtml.g.cs
-C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Pages\Tag\TagList.cshtml.g.cs
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Pages\_ViewImports.cshtml.g.cs
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\Author\Index.cshtml.g.cs
@@ -414,3 +412,13 @@ C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Raz
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\User\Details.cshtml.g.cs
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\User\Edit.cshtml.g.cs
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\BookItem\Create.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\BookItem\Delete.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\BookItem\Details.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\BookItem\Edit.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\BookItem\Index.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\ReservationBook\Create.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\ReservationBook\Delete.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\ReservationBook\Details.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\ReservationBook\Edit.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\ReservationBook\Index.cshtml.g.cs

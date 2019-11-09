@@ -36,7 +36,7 @@ namespace WebApplication2.Controllers
         // GET: Language/Create
         public ActionResult Create()
         {
-            var languages = _dbContext.Roles.ToList();
+            var languages = _dbContext.Languages.ToList();
             var bookType = _dbContext.BookTypes.ToList();
             
             ViewBag.Languages = new MultiSelectList(languages, "ID" ,"LanguageName");
@@ -54,7 +54,7 @@ namespace WebApplication2.Controllers
         {
             try
             {
-                Language language = _dbContext.Roles.Find(bookViewModel.selectedLanguage);
+                Language language = _dbContext.Languages.Find(bookViewModel.selectedLanguage);
                 BookType bookType = _dbContext.BookTypes.Find(bookViewModel.selectedBookType);
 
                 Book book = new Book
@@ -80,19 +80,39 @@ namespace WebApplication2.Controllers
         // GET: Language/Edit/5
         public ActionResult Edit(Guid id)
         {
-            BookType bookType = _dbContext.BookTypes.Find(id);
-
-            return View(bookType);
+            Book book = _dbContext.Books.Where(c => c.ID == id).Include(c => c.BookType).Include(c => c.Language).First();
+      
+            var languages = _dbContext.Languages.ToList();
+            var bookType = _dbContext.BookTypes.ToList();
+            
+            ViewBag.Languages = new MultiSelectList(languages, "ID", "LanguageName");
+            ViewBag.BookTypes = new MultiSelectList(bookType, "ID", "Discription");
+            return View(new BookViewModel {
+            ID = book.ID,
+            Name = book.Name,
+            Discription = book.Discription,
+            
+            });
         }
 
         // POST: Language/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Guid id, Book book)
+        public ActionResult Edit(BookViewModel bookViewModel)
         {
             try
             {
-                book.ID = id;
+                Language language = _dbContext.Languages.Find(bookViewModel.selectedLanguage);
+                BookType bookType = _dbContext.BookTypes.Find(bookViewModel.selectedBookType);
+
+                Book book = new Book
+                {
+                    ID = bookViewModel.ID,
+                    Name = bookViewModel.Name,
+                    Discription = bookViewModel.Discription,
+                    BookType = bookType,
+                    Language = language
+                };
                 _dbContext.Books.Update(book);
                 _dbContext.SaveChanges();
                 return RedirectToAction(nameof(Index));

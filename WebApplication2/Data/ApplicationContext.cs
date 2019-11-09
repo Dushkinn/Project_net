@@ -18,7 +18,7 @@ namespace WebApplication2.Controllers
         public DbSet<BookItem> BookItems { get; set; }
         public DbSet<BookReservationRequest> BookReservationRequests { get; set; }
         public DbSet<BookType> BookTypes { get; set; }
-        public DbSet<Language> Roles { get; set; }
+        public DbSet<Language> Languages { get; set; }
         public DbSet<ReservationBook> ReservationBooks { get; set; }
         public DbSet<StateType> StateTypes { get; set; }
         public DbSet<Tag> Tags { get; set; }

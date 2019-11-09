@@ -1,5 +1,5 @@
 ﻿
-@model WebApplication2.Models.Book
+@model WebApplication2.Models.ViewModel.BookViewModel
 
 @{
     ViewData["Title"] = "Edit";
@@ -18,7 +18,7 @@
 
 
             @Html.ValidationSummary(true, "", new { htmlAttributes = new { @class = "text-danger" } })
-            @Html.HiddenFor(model => model.Id)
+            @Html.HiddenFor(model => model.ID)
             <div class="form-group">
                 @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label" })
                 @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })

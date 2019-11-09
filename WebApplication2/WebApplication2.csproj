@@ -25,9 +25,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\BookItem\" />
-    <Folder Include="Views\BookReservationRequest\" />
-    <Folder Include="Views\ReservationBook\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 

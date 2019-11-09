@@ -20,7 +20,7 @@ namespace WebApplication2.Controllers
         // GET: Language
         public async Task<IActionResult> Index()
         {
-            var languages = await _dbContext.Roles.ToListAsync();
+            var languages = await _dbContext.Languages.ToListAsync();
 
             return View(languages);
         }
@@ -52,7 +52,7 @@ namespace WebApplication2.Controllers
                     return View(language);
                 }
 
-                _dbContext.Roles.Add(language);
+                _dbContext.Languages.Add(language);
                 await _dbContext.SaveChangesAsync();
 
                 return RedirectToPage("/Index");
@@ -67,7 +67,7 @@ namespace WebApplication2.Controllers
         // GET: Language/Edit/5
         public ActionResult Edit(Guid id)
         {
-            Language language = _dbContext.Roles.Find(id);
+            Language language = _dbContext.Languages.Find(id);
 
             return View(language);
         }
@@ -80,7 +80,7 @@ namespace WebApplication2.Controllers
             try
             {
                 language.ID = id;
-                 _dbContext.Roles.Update(language);
+                 _dbContext.Languages.Update(language);
                 _dbContext.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
@@ -105,13 +105,13 @@ namespace WebApplication2.Controllers
             try
             {
                 Language language = new Language { ID = id};
-                _dbContext.Roles.Remove(language);
+                _dbContext.Languages.Remove(language);
                 _dbContext.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
             catch
             {
-                return View();
+                return RedirectToAction(nameof(Delete));
             }
         }
     }
