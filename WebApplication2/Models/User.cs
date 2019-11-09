@@ -10,6 +10,7 @@ namespace WebApplication2.Models
     {
         [Key]
         public Guid ID { get; set; }
+        [CustomValidation.UserName(ErrorMessage = "First charecters is lower  ")]
         public String FullName { get; set; }
         public String Password { get; set; }
         public UserRole Role { get; set; }

@@ -52,6 +52,12 @@ namespace WebApplication2.Controllers
         {
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    var roles = _dbContext.UserRoles.ToList();
+                    ViewBag.Roles = new MultiSelectList(roles, "Role", "Name");
+                    return View("Create", userViewModel);
+                }
                 UserRole userRole = _dbContext.UserRoles.Find(userViewModel.selectedRole);
 
                 User user = new User
@@ -121,7 +127,7 @@ namespace WebApplication2.Controllers
         public ActionResult Delete(Guid id)
         {
 
-            return View(new BookType { ID = id });
+            return View(new User { ID = id });
         }
 
         //POST: Language/Delete/5
@@ -131,8 +137,8 @@ namespace WebApplication2.Controllers
         {
             try
             {
-                Book Book = new Book { ID = id };
-                _dbContext.Books.Remove(Book);
+                User user = new User { ID = id };
+                _dbContext.Users.Remove(user);
                 _dbContext.SaveChanges();
                 return RedirectToAction(nameof(Index));
             }
