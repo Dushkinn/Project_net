@@ -6,21 +6,22 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.Models;
+using WebApplication2.Services.Languages;
 
 namespace WebApplication2.Controllers
 {
     public class LanguageController : Controller
     {
-        private readonly ApplicationContext _dbContext;
+        private readonly LanguageService _languageService;
 
-        public LanguageController(ApplicationContext dbContext)
+        public LanguageController(LanguageService languageService)
         {
-            _dbContext = dbContext;
+            _languageService = languageService;
         }
         // GET: Language
         public async Task<IActionResult> Index()
         {
-            var languages = await _dbContext.Languages.ToListAsync();
+            var languages = await _languageService.GetList();
 
             return View(languages);
         }
@@ -52,8 +53,7 @@ namespace WebApplication2.Controllers
                     return View(language);
                 }
 
-                _dbContext.Languages.Add(language);
-                await _dbContext.SaveChangesAsync();
+                _languageService.Create(language);
 
                 return RedirectToPage("/Index");
 
@@ -67,7 +67,7 @@ namespace WebApplication2.Controllers
         // GET: Language/Edit/5
         public ActionResult Edit(Guid id)
         {
-            Language language = _dbContext.Languages.Find(id);
+            Language language = _languageService.Get(id);
 
             return View(language);
         }
@@ -79,9 +79,7 @@ namespace WebApplication2.Controllers
         {
             try
             {
-                language.ID = id;
-                 _dbContext.Languages.Update(language);
-                _dbContext.SaveChanges();
+                _languageService.Edit(id, language);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -104,9 +102,7 @@ namespace WebApplication2.Controllers
         {
             try
             {
-                Language language = new Language { ID = id};
-                _dbContext.Languages.Remove(language);
-                _dbContext.SaveChanges();
+                _languageService.Remove(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

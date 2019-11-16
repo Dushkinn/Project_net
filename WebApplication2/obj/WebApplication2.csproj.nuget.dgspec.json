@@ -87,6 +87,10 @@
               "target": "Package",
               "version": "[2.1.10, )"
             },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.13.1, )"
+            },
             "MySql.Data": {
               "target": "Package",
               "version": "[8.0.18, )"

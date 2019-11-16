@@ -11,6 +11,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebApplication2.Controllers;
 using Microsoft.EntityFrameworkCore;
+using WebApplication2.Services.Authors;
+using WebApplication2.Services;
+using WebApplication2.Services.BookTypes;
+using WebApplication2.Services.Languages;
 
 namespace WebApplication2
 {
@@ -37,7 +41,14 @@ namespace WebApplication2
                 options.UseMySQL(Configuration.GetConnectionString("DefaultConnection"));
             });
             services.AddMvc();
+            services.AddScoped<AuthorService>();
+            services.AddScoped<IAuthorRepository, AuthorRepository>();
 
+            services.AddScoped<BookTypeService>();
+            services.AddScoped<IBookTypeRepository, BookTypeRepository>();
+
+            services.AddScoped<LanguageService>();
+            services.AddScoped<ILanguageRepository, LanguageRepository>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }

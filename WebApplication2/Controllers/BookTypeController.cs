@@ -5,32 +5,33 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.Models;
+using WebApplication2.Services.BookTypes;
 
 namespace WebApplication2.Controllers
 {
     public class BookTypeController : Controller
     {
-        private readonly ApplicationContext _dbContext;
+        private readonly BookTypeService _bookTypeService;
 
-        public BookTypeController(ApplicationContext dbContext)
+        public BookTypeController(BookTypeService bookTypeService)
         {
-            _dbContext = dbContext;
+            _bookTypeService = bookTypeService;
         }
-        // GET: Language
+        // GET: BookType
         public async Task<IActionResult> Index()
         {
-            var bookTypes = await _dbContext.BookTypes.ToListAsync();
+            var bookTypes = await _bookTypeService.GetList();
 
             return View(bookTypes);
         }
 
-        // GET: Language/Details/5
+        // GET: BookType/Details/5
         public ActionResult Details(int id)
         {
             return View();  
         }
 
-        // GET: Language/Create
+        // GET: BookType/Create
         public ActionResult Create()
         {
             BookType bookType = new BookType();
@@ -38,7 +39,7 @@ namespace WebApplication2.Controllers
             return View(bookType);
         }
 
-        // POST: Language/Create
+        // POST: BookType/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(BookType bookType)
@@ -51,8 +52,7 @@ namespace WebApplication2.Controllers
                     return View(bookType);
                 }
 
-                _dbContext.BookTypes.Add(bookType);
-                await _dbContext.SaveChangesAsync();
+                _bookTypeService.Create(bookType);
 
                 return RedirectToPage("/Index");
 
@@ -63,24 +63,22 @@ namespace WebApplication2.Controllers
             }
         }
 
-        // GET: Language/Edit/5
+        // GET: BookType/Edit/5
         public ActionResult Edit(Guid id)
         {
-            BookType bookType = _dbContext.BookTypes.Find(id);
+            BookType bookType = _bookTypeService.Get(id);
 
             return View(bookType);
         }
 
-        // POST: Language/Edit/5
+        // POST: BookType/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(Guid id, BookType bookType)
         {
             try
             {
-                bookType.ID = id;
-                _dbContext.BookTypes.Update(bookType);
-                _dbContext.SaveChanges();
+                _bookTypeService.Edit( id,  bookType);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -89,23 +87,21 @@ namespace WebApplication2.Controllers
             }
         }
 
-        // GET: Language/Delete/5
+        // GET: BookType/Delete/5
         public ActionResult Delete(Guid id)
         {
 
             return View(new BookType { ID = id });
         }
 
-        // POST: Language/Delete/5
+        // POST: BookType/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteBookType(Guid id)
         {
             try
             {
-                BookType bookType = new BookType { ID = id };
-                _dbContext.BookTypes.Remove(bookType);
-                _dbContext.SaveChanges();
+                _bookTypeService.Remove(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

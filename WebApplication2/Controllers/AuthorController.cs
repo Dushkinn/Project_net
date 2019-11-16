@@ -6,20 +6,21 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApplication2.Models;
+using WebApplication2.Services.Authors;
 
 namespace WebApplication2.Controllers
 {
     public class AuthorController : Controller
     {
-        private readonly ApplicationContext _dbContext;
+        private readonly AuthorService _authorService;
 
-        public AuthorController(ApplicationContext dbContext)
+        public AuthorController(AuthorService authorService)
         {
-            _dbContext = dbContext;
+            _authorService = authorService;
         }
         public async Task<IActionResult> Index()
         {
-            var author = await _dbContext.Authors.ToListAsync();
+            var author = await _authorService.GetAuthors();
 
             return View(author);
         }
@@ -51,8 +52,7 @@ namespace WebApplication2.Controllers
                     return View(author);
                 }
 
-                _dbContext.Authors.Add(author);
-                await _dbContext.SaveChangesAsync();
+                _authorService.CreateAuthor(author);
 
                 return RedirectToPage("/Index");
 
@@ -66,7 +66,7 @@ namespace WebApplication2.Controllers
         // GET: Language/Edit/5
         public ActionResult Edit(Guid id)
         {
-            Author author = _dbContext.Authors.Find(id);
+            Author author = _authorService.GetAuthor(id);
 
             return View(author);
         }
@@ -78,9 +78,7 @@ namespace WebApplication2.Controllers
         {
             try
             {
-                author.Id = id;
-                _dbContext.Authors.Update(author);
-                _dbContext.SaveChanges();
+                _authorService.EditAuthor(id, author);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -103,9 +101,7 @@ namespace WebApplication2.Controllers
         {
             try
             {
-                Author author = new Author { Id = id };
-                _dbContext.Authors.Remove(author);
-                _dbContext.SaveChanges();
+                _authorService.RemoveAuthor(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

@@ -422,3 +422,5 @@ C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Raz
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\ReservationBook\Details.cshtml.g.cs
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\ReservationBook\Edit.cshtml.g.cs
 C:\Users\duski\source\repos\WebApplication2\WebApplication2\obj\Debug\net461\Razor\Views\ReservationBook\Index.cshtml.g.cs
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\bin\Debug\net461\Castle.Core.dll
+C:\Users\duski\source\repos\WebApplication2\WebApplication2\bin\Debug\net461\Moq.dll
