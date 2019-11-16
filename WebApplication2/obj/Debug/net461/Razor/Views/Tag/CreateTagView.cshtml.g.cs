@@ -56,7 +56,7 @@ namespace AspNetCore
             WriteLiteral("\n<!DOCTYPE html>\n\n<html>\n");
             EndContext();
             BeginContext(149, 101, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0f109726f69e4d4fae7ce62c04d72a72", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "86d0b217ec0f4494b9577b8e1bdafe6b", async() => {
                 BeginContext(155, 88, true);
                 WriteLiteral("\n    <meta name=\"viewport\" content=\"width=device-width\" />\n    <title>CreateTag</title>\n");
                 EndContext();
@@ -76,7 +76,7 @@ namespace AspNetCore
             WriteLiteral("\n");
             EndContext();
             BeginContext(251, 1345, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5baf13e3d8ad4ebf81217d42c7760d4d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9d14faaf1d2348e7a3408ca26621413a", async() => {
                 BeginContext(257, 83, true);
                 WriteLiteral("\n\n    <h4>Tag</h4>\n    <hr />\n    <div class=\"row\">\n        <div class=\"col-md-4\">\n");
                 EndContext();
