@@ -27,6 +27,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\images\" />
+    <Folder Include="Services\Создать папку\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -35,4 +36,7 @@
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Services\Создать папку\EmptyClass.cs" />
+  </ItemGroup>
 </Project>
