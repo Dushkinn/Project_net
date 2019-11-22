@@ -68,7 +68,7 @@ using WebApplication2;
             WriteLiteral("    <div class=\"container mt-4\">\r\n\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                Tag\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(268, 83, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8141f8219ece46389d910f8df1e3700a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c36b781dcbc4549bfca04d4fc38a186", async() => {
                 BeginContext(340, 7, true);
                 WriteLiteral("TagList");
                 EndContext();
@@ -96,7 +96,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(369, 89, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b58292b75ce74dc7bfe4803789624e93", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ef89c05eb6e14da7af8ab4f26ce8c155", async() => {
                 BeginContext(444, 10, true);
                 WriteLiteral("Create Tag");
                 EndContext();
@@ -121,7 +121,7 @@ using WebApplication2;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                Language\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(662, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "60eabc30a4974edc857e0c7fe08ff129", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "155d5fcf7ac54b8692427ecc694a42d0", async() => {
                 BeginContext(739, 13, true);
                 WriteLiteral("Language List");
                 EndContext();
@@ -149,7 +149,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(774, 92, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8a60533428164edf934088e10753a76e", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5f04fe3f66ea40afa07db2cd45dd65b3", async() => {
                 BeginContext(847, 15, true);
                 WriteLiteral("Create Language");
                 EndContext();
@@ -174,7 +174,7 @@ using WebApplication2;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                BookType\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(1070, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7a5a086f9c2b4dcb9767d571587b0709", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1297ff95ac0a47088bd892424761c5c2", async() => {
                 BeginContext(1147, 13, true);
                 WriteLiteral("BookType List");
                 EndContext();
@@ -202,7 +202,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1182, 92, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f432e31477094759aa19a9cbd01d53b9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79fae1cfcee14194ab1cbf4bb3a77a11", async() => {
                 BeginContext(1255, 15, true);
                 WriteLiteral("Create BookType");
                 EndContext();
@@ -227,7 +227,7 @@ using WebApplication2;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                Author\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(1476, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c6a5605fa71498eaa963e865eb2ecbe", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e9d12198c73346aba85e1a566075f304", async() => {
                 BeginContext(1551, 11, true);
                 WriteLiteral("Author List");
                 EndContext();
@@ -255,7 +255,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1584, 88, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7780e0d2000c4c7e8ee2ccc43419ea83", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c962b25d8d9d47218f83afdb91a6fcc3", async() => {
                 BeginContext(1655, 13, true);
                 WriteLiteral("Create Author");
                 EndContext();
@@ -280,7 +280,7 @@ using WebApplication2;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                User Role\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(1877, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54280f1df6094a8993005af68675dfeb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cfa413716b134fb38ea96202cc74f4b6", async() => {
                 BeginContext(1954, 14, true);
                 WriteLiteral("User Role List");
                 EndContext();
@@ -308,7 +308,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(1990, 93, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff29e77038cf4e2192a305bba603e33f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "509da7afc60d4255bd4e8ebe33b59b73", async() => {
                 BeginContext(2063, 16, true);
                 WriteLiteral("Create User Role");
                 EndContext();
@@ -333,7 +333,7 @@ using WebApplication2;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                Book\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(2283, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38f9ae8e2b1b4b33a4cf9516adeab007", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3d0e26fbd588465e9dfe8b5c9ffa8259", async() => {
                 BeginContext(2356, 9, true);
                 WriteLiteral("Book List");
                 EndContext();
@@ -361,7 +361,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(2387, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "37885a6890914ec2b9b5ac494a24fec9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc7e936baab1419fa91d34ed0d5d01fd", async() => {
                 BeginContext(2456, 11, true);
                 WriteLiteral("Create Book");
                 EndContext();
@@ -386,7 +386,7 @@ using WebApplication2;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                User\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(2671, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d8b73a485f84746828695f222a08af8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "55cbf63098004b18953cde3a8197415f", async() => {
                 BeginContext(2744, 9, true);
                 WriteLiteral("User List");
                 EndContext();
@@ -414,7 +414,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(2775, 84, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "326f2845432b43469c22b399a80dffb8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5cd58cf4c77541f2bca79dfb322a6aed", async() => {
                 BeginContext(2844, 11, true);
                 WriteLiteral("Create User");
                 EndContext();
@@ -439,7 +439,7 @@ using WebApplication2;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                Book State\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(3065, 97, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65f0df5b246a4dedab0d87711b676461", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb825f1581234fa3a8ce5218576e51d5", async() => {
                 BeginContext(3143, 15, true);
                 WriteLiteral("Book State List");
                 EndContext();
@@ -467,7 +467,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(3180, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e8ef7aa3a7ff43cb980de9eeda6faa68", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4d171e39ee884b038a2105a4dafbdacc", async() => {
                 BeginContext(3254, 17, true);
                 WriteLiteral("Create Book State");
                 EndContext();
@@ -492,7 +492,7 @@ using WebApplication2;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                Book Item\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(3480, 95, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1774b033b74a44b3b451c981d567d4e0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dfa907a8313d4aa7bf9f9122d6a60ce6", async() => {
                 BeginContext(3557, 14, true);
                 WriteLiteral("Book Item List");
                 EndContext();
@@ -520,7 +520,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(3593, 93, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4bec8fff552475491e721c2563458d8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c65248c84f643d8ad7df972cd570227", async() => {
                 BeginContext(3666, 16, true);
                 WriteLiteral("Create Book Item");
                 EndContext();
@@ -545,7 +545,7 @@ using WebApplication2;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card\">\r\n            <div class=\"card-header\">\r\n                Reservation Book\r\n            </div>\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(3898, 109, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8b4d4eee0464d4099d2502719ea56e7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2768b6d3e9e54377b0df6062f972a1b6", async() => {
                 BeginContext(3982, 21, true);
                 WriteLiteral("Reservation Book List");
                 EndContext();
@@ -573,7 +573,7 @@ using WebApplication2;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(4025, 107, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a1bab990316848fe91746e0bffac45a8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ee17d1c6666e454785843cae50b2a8e5", async() => {
                 BeginContext(4105, 23, true);
                 WriteLiteral("Create Reservation Book");
                 EndContext();
