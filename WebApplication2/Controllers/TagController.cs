@@ -36,15 +36,15 @@ namespace WebApplication2.Controllers
         }
 
         // GET: Tag/Create
-        public  ActionResult CreateTagView()
+        public  ActionResult Create()
         {
-            return View();
+            return View("Create");
         }
 
         // POST: Tag/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async  Task<IActionResult> CreateTagView(Tag  Tag)
+        public async  Task<IActionResult> Create(Tag  Tag)
         {
             try
             {

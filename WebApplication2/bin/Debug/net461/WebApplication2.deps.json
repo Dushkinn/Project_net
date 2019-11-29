@@ -1,6 +1,6 @@
 {
   "runtimeTarget": {
-    "name": ".NETFramework,Version=v4.6.1/",
+    "name": ".NETFramework,Version=v4.6.1/win7-x86",
     "signature": ""
   },
   "compilationOptions": {
@@ -11,14 +11,14 @@
       "NET461"
     ],
     "languageVersion": "7.3",
-    "platform": "",
+    "platform": "AnyCPU",
     "allowUnsafe": false,
     "warningsAsErrors": false,
     "optimize": false,
     "keyFile": "",
     "emitEntryPoint": true,
     "xmlDoc": false,
-    "debugType": "portable"
+    "debugType": "full"
   },
   "targets": {
     ".NETFramework,Version=v4.6.1": {
@@ -60,9 +60,6 @@
           "System.Runtime.Serialization": "4.0.0.0",
           "System.Xml": "4.0.0.0",
           "System.Xml.Linq": "4.0.0.0",
-          "System.IO.Compression.Reference": "4.0.0.0",
-          "System.Net.Http": "4.0.0.0",
-          "System.Runtime.InteropServices.RuntimeInformation.Reference": "4.0.0.0",
           "System.Reflection.Emit": "0.0.0.0",
           "System.Reflection.Emit.ILGeneration": "0.0.0.0",
           "System.Reflection.Emit.Lightweight": "0.0.0.0",
@@ -100,6 +97,7 @@
           "System.Globalization.Calendars": "4.0.3.0",
           "System.Globalization.Reference": "4.0.11.0",
           "System.Globalization.Extensions": "4.1.0.0",
+          "System.IO.Compression.Reference": "4.2.0.0",
           "System.IO.Compression.ZipFile": "4.0.3.0",
           "System.IO": "4.1.2.0",
           "System.IO.FileSystem.Reference": "4.0.3.0",
@@ -114,6 +112,7 @@
           "System.Linq.Expressions.Reference": "4.1.2.0",
           "System.Linq.Parallel": "4.0.1.0",
           "System.Linq.Queryable": "4.0.1.0",
+          "System.Net.Http": "4.2.0.0",
           "System.Net.NameResolution": "4.0.2.0",
           "System.Net.NetworkInformation": "4.1.2.0",
           "System.Net.Ping": "4.0.2.0",
@@ -136,6 +135,7 @@
           "System.Runtime.Extensions.Reference": "4.1.2.0",
           "System.Runtime.Handles": "4.0.1.0",
           "System.Runtime.InteropServices.Reference": "4.1.2.0",
+          "System.Runtime.InteropServices.RuntimeInformation.Reference": "4.0.2.0",
           "System.Runtime.Numerics.Reference": "4.0.1.0",
           "System.Runtime.Serialization.Formatters": "4.0.2.0",
           "System.Runtime.Serialization.Json": "4.0.1.0",
@@ -173,172 +173,157 @@
       },
       "Microsoft.CSharp.Reference/4.0.0.0": {
         "compile": {
-          "Microsoft.CSharp.dll": {}
+          ".NETFramework/v4.6.1/Microsoft.CSharp.dll": {}
         }
       },
       "mscorlib/4.0.0.0": {
         "compile": {
-          "mscorlib.dll": {}
+          ".NETFramework/v4.6.1/mscorlib.dll": {}
         }
       },
       "System.ComponentModel.Composition/4.0.0.0": {
         "compile": {
-          "System.ComponentModel.Composition.dll": {}
+          ".NETFramework/v4.6.1/System.ComponentModel.Composition.dll": {}
         }
       },
       "System.ComponentModel.DataAnnotations/4.0.0.0": {
         "compile": {
-          "System.ComponentModel.DataAnnotations.dll": {}
+          ".NETFramework/v4.6.1/System.ComponentModel.DataAnnotations.dll": {}
         }
       },
       "System.Configuration/4.0.0.0": {
         "compile": {
-          "System.Configuration.dll": {}
+          ".NETFramework/v4.6.1/System.Configuration.dll": {}
         }
       },
       "System.Configuration.Install/4.0.0.0": {
         "compile": {
-          "System.Configuration.Install.dll": {}
+          ".NETFramework/v4.6.1/System.Configuration.Install.dll": {}
         }
       },
       "System.Data.OracleClient/4.0.0.0": {
         "compile": {
-          "System.Data.OracleClient.dll": {}
+          ".NETFramework/v4.6.1/System.Data.OracleClient.dll": {}
         }
       },
       "System.Drawing.Design/4.0.0.0": {
         "compile": {
-          "System.Drawing.Design.dll": {}
+          ".NETFramework/v4.6.1/System.Drawing.Design.dll": {}
         }
       },
       "System.Management/4.0.0.0": {
         "compile": {
-          "System.Management.dll": {}
+          ".NETFramework/v4.6.1/System.Management.dll": {}
         }
       },
       "System.Net/4.0.0.0": {
         "compile": {
-          "System.Net.dll": {}
+          ".NETFramework/v4.6.1/System.Net.dll": {}
         }
       },
       "System.Security/4.0.0.0": {
         "compile": {
-          "System.Security.dll": {}
+          ".NETFramework/v4.6.1/System.Security.dll": {}
         }
       },
       "System.ServiceProcess/4.0.0.0": {
         "compile": {
-          "System.ServiceProcess.dll": {}
+          ".NETFramework/v4.6.1/System.ServiceProcess.dll": {}
         }
       },
       "System.Transactions/4.0.0.0": {
         "compile": {
-          "System.Transactions.dll": {}
+          ".NETFramework/v4.6.1/System.Transactions.dll": {}
         }
       },
       "System.Core/4.0.0.0": {
         "compile": {
-          "System.Core.dll": {}
+          ".NETFramework/v4.6.1/System.Core.dll": {}
         }
       },
       "System.Data/4.0.0.0": {
         "compile": {
-          "System.Data.dll": {}
+          ".NETFramework/v4.6.1/System.Data.dll": {}
         }
       },
       "System/4.0.0.0": {
         "compile": {
-          "System.dll": {}
+          ".NETFramework/v4.6.1/System.dll": {}
         }
       },
       "System.Drawing/4.0.0.0": {
         "compile": {
-          "System.Drawing.dll": {}
+          ".NETFramework/v4.6.1/System.Drawing.dll": {}
         }
       },
       "System.IO.Compression.FileSystem/4.0.0.0": {
         "compile": {
-          "System.IO.Compression.FileSystem.dll": {}
+          ".NETFramework/v4.6.1/System.IO.Compression.FileSystem.dll": {}
         }
       },
       "System.Numerics/4.0.0.0": {
         "compile": {
-          "System.Numerics.dll": {}
+          ".NETFramework/v4.6.1/System.Numerics.dll": {}
         }
       },
       "System.Runtime.Serialization/4.0.0.0": {
         "compile": {
-          "System.Runtime.Serialization.dll": {}
+          ".NETFramework/v4.6.1/System.Runtime.Serialization.dll": {}
         }
       },
       "System.Xml/4.0.0.0": {
         "compile": {
-          "System.Xml.dll": {}
+          ".NETFramework/v4.6.1/System.Xml.dll": {}
         }
       },
       "System.Xml.Linq/4.0.0.0": {
         "compile": {
-          "System.Xml.Linq.dll": {}
-        }
-      },
-      "System.IO.Compression.Reference/4.0.0.0": {
-        "compile": {
-          "System.IO.Compression.dll": {}
-        }
-      },
-      "System.Net.Http/4.0.0.0": {
-        "compile": {
-          "System.Net.Http.dll": {}
-        }
-      },
-      "System.Runtime.InteropServices.RuntimeInformation.Reference/4.0.0.0": {
-        "compile": {
-          "System.Runtime.InteropServices.RuntimeInformation.dll": {}
+          ".NETFramework/v4.6.1/System.Xml.Linq.dll": {}
         }
       },
       "System.Reflection.Emit/0.0.0.0": {
         "compile": {
-          "System.Reflection.Emit.dll": {}
+          ".NETFramework/v4.6.1/Facades/System.Reflection.Emit.dll": {}
         }
       },
       "System.Reflection.Emit.ILGeneration/0.0.0.0": {
         "compile": {
-          "System.Reflection.Emit.ILGeneration.dll": {}
+          ".NETFramework/v4.6.1/Facades/System.Reflection.Emit.ILGeneration.dll": {}
         }
       },
       "System.Reflection.Emit.Lightweight/0.0.0.0": {
         "compile": {
-          "System.Reflection.Emit.Lightweight.dll": {}
+          ".NETFramework/v4.6.1/Facades/System.Reflection.Emit.Lightweight.dll": {}
         }
       },
       "System.Runtime.InteropServices.WindowsRuntime/0.0.0.0": {
         "compile": {
-          "System.Runtime.InteropServices.WindowsRuntime.dll": {}
+          ".NETFramework/v4.6.1/Facades/System.Runtime.InteropServices.WindowsRuntime.dll": {}
         }
       },
       "System.ServiceModel.Duplex/0.0.0.0": {
         "compile": {
-          "System.ServiceModel.Duplex.dll": {}
+          ".NETFramework/v4.6.1/Facades/System.ServiceModel.Duplex.dll": {}
         }
       },
       "System.ServiceModel.Http/0.0.0.0": {
         "compile": {
-          "System.ServiceModel.Http.dll": {}
+          ".NETFramework/v4.6.1/Facades/System.ServiceModel.Http.dll": {}
         }
       },
       "System.ServiceModel.NetTcp/0.0.0.0": {
         "compile": {
-          "System.ServiceModel.NetTcp.dll": {}
+          ".NETFramework/v4.6.1/Facades/System.ServiceModel.NetTcp.dll": {}
         }
       },
       "System.ServiceModel.Primitives/0.0.0.0": {
         "compile": {
-          "System.ServiceModel.Primitives.dll": {}
+          ".NETFramework/v4.6.1/Facades/System.ServiceModel.Primitives.dll": {}
         }
       },
       "System.ServiceModel.Security/0.0.0.0": {
         "compile": {
-          "System.ServiceModel.Security.dll": {}
+          ".NETFramework/v4.6.1/Facades/System.ServiceModel.Security.dll": {}
         }
       },
       "Microsoft.Win32.Primitives/4.0.3.0": {
@@ -481,6 +466,11 @@
           "System.Globalization.Extensions.dll": {}
         }
       },
+      "System.IO.Compression.Reference/4.2.0.0": {
+        "compile": {
+          "System.IO.Compression.dll": {}
+        }
+      },
       "System.IO.Compression.ZipFile/4.0.3.0": {
         "compile": {
           "System.IO.Compression.ZipFile.dll": {}
@@ -549,6 +539,11 @@
       "System.Linq.Queryable/4.0.1.0": {
         "compile": {
           "System.Linq.Queryable.dll": {}
+        }
+      },
+      "System.Net.Http/4.2.0.0": {
+        "compile": {
+          "System.Net.Http.dll": {}
         }
       },
       "System.Net.NameResolution/4.0.2.0": {
@@ -659,6 +654,11 @@
       "System.Runtime.InteropServices.Reference/4.1.2.0": {
         "compile": {
           "System.Runtime.InteropServices.dll": {}
+        }
+      },
+      "System.Runtime.InteropServices.RuntimeInformation.Reference/4.0.2.0": {
+        "compile": {
+          "System.Runtime.InteropServices.RuntimeInformation.dll": {}
         }
       },
       "System.Runtime.Numerics.Reference/4.0.1.0": {
@@ -2250,7 +2250,7 @@
         }
       }
     },
-    ".NETFramework,Version=v4.6.1/": {
+    ".NETFramework,Version=v4.6.1/win7-x86": {
       "WebApplication2/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore": "2.1.7",
@@ -2289,9 +2289,6 @@
           "System.Runtime.Serialization": "4.0.0.0",
           "System.Xml": "4.0.0.0",
           "System.Xml.Linq": "4.0.0.0",
-          "System.IO.Compression.Reference": "4.0.0.0",
-          "System.Net.Http": "4.0.0.0",
-          "System.Runtime.InteropServices.RuntimeInformation.Reference": "4.0.0.0",
           "System.Reflection.Emit": "0.0.0.0",
           "System.Reflection.Emit.ILGeneration": "0.0.0.0",
           "System.Reflection.Emit.Lightweight": "0.0.0.0",
@@ -2329,6 +2326,7 @@
           "System.Globalization.Calendars": "4.0.3.0",
           "System.Globalization.Reference": "4.0.11.0",
           "System.Globalization.Extensions": "4.1.0.0",
+          "System.IO.Compression.Reference": "4.2.0.0",
           "System.IO.Compression.ZipFile": "4.0.3.0",
           "System.IO": "4.1.2.0",
           "System.IO.FileSystem.Reference": "4.0.3.0",
@@ -2343,6 +2341,7 @@
           "System.Linq.Expressions.Reference": "4.1.2.0",
           "System.Linq.Parallel": "4.0.1.0",
           "System.Linq.Queryable": "4.0.1.0",
+          "System.Net.Http": "4.2.0.0",
           "System.Net.NameResolution": "4.0.2.0",
           "System.Net.NetworkInformation": "4.1.2.0",
           "System.Net.Ping": "4.0.2.0",
@@ -2365,6 +2364,7 @@
           "System.Runtime.Extensions.Reference": "4.1.2.0",
           "System.Runtime.Handles": "4.0.1.0",
           "System.Runtime.InteropServices.Reference": "4.1.2.0",
+          "System.Runtime.InteropServices.RuntimeInformation.Reference": "4.0.2.0",
           "System.Runtime.Numerics.Reference": "4.0.1.0",
           "System.Runtime.Serialization.Formatters": "4.0.2.0",
           "System.Runtime.Serialization.Json": "4.0.1.0",
@@ -3105,7 +3105,11 @@
           "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {}
         }
       },
-      "Microsoft.DiaSymReader.Native/1.7.0": {},
+      "Microsoft.DiaSymReader.Native/1.7.0": {
+        "native": {
+          "runtimes/win-x86/native/Microsoft.DiaSymReader.Native.x86.dll": {}
+        }
+      },
       "Microsoft.DotNet.PlatformAbstractions/2.1.0": {
         "dependencies": {
           "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
@@ -3488,7 +3492,7 @@
           "Microsoft.VisualStudio.Web.CodeGenerators.Mvc": "2.1.10"
         },
         "runtime": {
-          "lib/net461/dotnet-aspnet-codegenerator-design.exe": {}
+          "runtimes/win7-x86/lib/net461/dotnet-aspnet-codegenerator-design.exe": {}
         }
       },
       "Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore/2.1.10": {
@@ -3534,7 +3538,7 @@
           "System.Security.Principal.Windows": "4.5.1"
         },
         "runtime": {
-          "lib/net461/Microsoft.Win32.Registry.dll": {}
+          "runtimes/win/lib/net461/Microsoft.Win32.Registry.dll": {}
         }
       },
       "Moq/4.13.1": {
@@ -3608,7 +3612,11 @@
       },
       "SQLitePCLRaw.lib.e_sqlite3.linux/1.1.12": {},
       "SQLitePCLRaw.lib.e_sqlite3.osx/1.1.12": {},
-      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.12": {},
+      "SQLitePCLRaw.lib.e_sqlite3.v110_xp/1.1.12": {
+        "native": {
+          "runtimes/win-x86/native/e_sqlite3.dll": {}
+        }
+      },
       "SQLitePCLRaw.provider.e_sqlite3.net45/1.1.12": {
         "dependencies": {
           "SQLitePCLRaw.core": "1.1.12"
@@ -3688,7 +3696,7 @@
       "System.Console/4.3.0": {},
       "System.Data.SqlClient/4.5.1": {
         "runtime": {
-          "lib/net461/System.Data.SqlClient.dll": {}
+          "runtimes/win/lib/net461/System.Data.SqlClient.dll": {}
         }
       },
       "System.Diagnostics.Debug/4.3.0": {},
@@ -3766,7 +3774,7 @@
           "System.Security.Principal.Windows": "4.5.1"
         },
         "runtime": {
-          "lib/net461/System.Security.AccessControl.dll": {}
+          "runtimes/win/lib/net461/System.Security.AccessControl.dll": {}
         }
       },
       "System.Security.Cryptography.Algorithms/4.3.0": {
@@ -3776,7 +3784,7 @@
       },
       "System.Security.Cryptography.Cng/4.5.0": {
         "runtime": {
-          "lib/net461/System.Security.Cryptography.Cng.dll": {}
+          "runtimes/win/lib/net461/System.Security.Cryptography.Cng.dll": {}
         }
       },
       "System.Security.Cryptography.Encoding/4.3.0": {},
@@ -3805,13 +3813,13 @@
       },
       "System.Security.Principal.Windows/4.5.1": {
         "runtime": {
-          "lib/net461/System.Security.Principal.Windows.dll": {}
+          "runtimes/win/lib/net461/System.Security.Principal.Windows.dll": {}
         }
       },
       "System.Text.Encoding/4.3.0": {},
       "System.Text.Encoding.CodePages/4.3.0": {
         "runtime": {
-          "lib/net46/System.Text.Encoding.CodePages.dll": {}
+          "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll": {}
         }
       },
       "System.Text.Encoding.Extensions/4.3.0": {},
@@ -4259,7 +4267,7 @@
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "sha512-2A5oomrmDpn0sAbdvBXIdSOWOo6AA+BqmfHMK36RDQse0uS24UElGI5pdMK4iDhHnYuvsMsbLI4oiObFoqOLWg==",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "hashPath": "microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512"
     },
@@ -5325,21 +5333,6 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.IO.Compression.Reference/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Net.Http/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "System.Runtime.InteropServices.RuntimeInformation.Reference/4.0.0.0": {
-      "type": "referenceassembly",
-      "serviceable": false,
-      "sha512": ""
-    },
     "System.Reflection.Emit/0.0.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -5525,6 +5518,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "System.IO.Compression.Reference/4.2.0.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
     "System.IO.Compression.ZipFile/4.0.3.0": {
       "type": "referenceassembly",
       "serviceable": false,
@@ -5591,6 +5589,11 @@
       "sha512": ""
     },
     "System.Linq.Queryable/4.0.1.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Net.Http/4.2.0.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""
@@ -5701,6 +5704,11 @@
       "sha512": ""
     },
     "System.Runtime.InteropServices.Reference/4.1.2.0": {
+      "type": "referenceassembly",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Runtime.InteropServices.RuntimeInformation.Reference/4.0.2.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

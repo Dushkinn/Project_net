@@ -1398,8 +1398,8 @@
           "Microsoft.Extensions.Configuration.Abstractions": "2.2.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "2.2.0.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.1.1.0",
-          "Microsoft.EntityFrameworkCore": "2.2.6.0",
           "Microsoft.AspNetCore.CookiePolicy": "2.1.2.0",
+          "Microsoft.EntityFrameworkCore": "2.2.6.0",
           "Microsoft.AspNetCore.Routing": "2.1.1.0",
           "Microsoft.AspNetCore.Mvc.RazorPages": "2.1.3.0",
           "Microsoft.EntityFrameworkCore.Relational": "2.2.6.0",
@@ -1413,7 +1413,7 @@
           "Microsoft.AspNetCore.Diagnostics": "2.1.1.0",
           "Microsoft.AspNetCore.HttpsPolicy": "2.1.1.0",
           "Microsoft.AspNetCore.StaticFiles": "2.1.1.0",
-          "MySql.Data.EntityFrameworkCore": "8.0.18.0",
+          "Microsoft.EntityFrameworkCore.Sqlite": "2.2.6.0",
           "Microsoft.AspNetCore.Routing.Abstractions": "2.1.1.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "2.1.1.0",
           "Microsoft.Net.Http.Headers": "2.1.1.0",
@@ -1469,8 +1469,8 @@
           "Microsoft.AspNetCore.Mvc.ApiExplorer": "2.1.3.0",
           "Microsoft.AspNetCore.Mvc.TagHelpers": "2.1.3.0",
           "Microsoft.AspNetCore.Mvc.Cors": "2.1.3.0",
-          "MySql.Data": "8.0.18.0",
           "Microsoft.DotNet.PlatformAbstractions": "2.1.0.0",
+          "Microsoft.Data.Sqlite": "2.2.6.0",
           "Microsoft.CodeAnalysis": "2.8.0.0",
           "Microsoft.CodeAnalysis.CSharp": "2.8.0.0",
           "Microsoft.CodeAnalysis.Razor": "2.1.1.0",
@@ -1486,9 +1486,7 @@
           "Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets": "2.1.3.0",
           "Microsoft.AspNetCore.HttpOverrides": "2.1.1.0",
           "Microsoft.AspNetCore.Cors": "2.1.1.0",
-          "Google.Protobuf": "3.6.1.0",
-          "BouncyCastle.Crypto": "1.8.3.0",
-          "Renci.SshNet": "2016.1.0.0"
+          "SQLitePCLRaw.core": "1.1.12.351"
         },
         "runtime": {
           "WebApplication2.exe": {}
@@ -1542,19 +1540,19 @@
           }
         }
       },
-      "Microsoft.EntityFrameworkCore.Reference/2.2.6.0": {
-        "runtime": {
-          "Microsoft.EntityFrameworkCore.dll": {
-            "assemblyVersion": "2.2.6.0",
-            "fileVersion": "2.2.6.19169"
-          }
-        }
-      },
       "Microsoft.AspNetCore.CookiePolicy.Reference/2.1.2.0": {
         "runtime": {
           "Microsoft.AspNetCore.CookiePolicy.dll": {
             "assemblyVersion": "2.1.2.0",
             "fileVersion": "2.1.2.18207"
+          }
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Reference/2.2.6.0": {
+        "runtime": {
+          "Microsoft.EntityFrameworkCore.dll": {
+            "assemblyVersion": "2.2.6.0",
+            "fileVersion": "2.2.6.19169"
           }
         }
       },
@@ -1662,11 +1660,11 @@
           }
         }
       },
-      "MySql.Data.EntityFrameworkCore.Reference/8.0.18.0": {
+      "Microsoft.EntityFrameworkCore.Sqlite.Reference/2.2.6.0": {
         "runtime": {
-          "MySql.Data.EntityFrameworkCore.dll": {
-            "assemblyVersion": "8.0.18.0",
-            "fileVersion": "8.0.18.0"
+          "Microsoft.EntityFrameworkCore.Sqlite.dll": {
+            "assemblyVersion": "2.2.6.0",
+            "fileVersion": "2.2.6.19169"
           }
         }
       },
@@ -2110,19 +2108,19 @@
           }
         }
       },
-      "MySql.Data.Reference/8.0.18.0": {
-        "runtime": {
-          "MySql.Data.dll": {
-            "assemblyVersion": "8.0.18.0",
-            "fileVersion": "8.0.18.0"
-          }
-        }
-      },
       "Microsoft.DotNet.PlatformAbstractions.Reference/2.1.0.0": {
         "runtime": {
           "Microsoft.DotNet.PlatformAbstractions.dll": {
             "assemblyVersion": "2.1.0.0",
             "fileVersion": "2.1.0.0"
+          }
+        }
+      },
+      "Microsoft.Data.Sqlite.Reference/2.2.6.0": {
+        "runtime": {
+          "Microsoft.Data.Sqlite.dll": {
+            "assemblyVersion": "2.2.6.0",
+            "fileVersion": "2.2.6.19169"
           }
         }
       },
@@ -2246,27 +2244,11 @@
           }
         }
       },
-      "Google.Protobuf.Reference/3.6.1.0": {
+      "SQLitePCLRaw.core.Reference/1.1.12.351": {
         "runtime": {
-          "Google.Protobuf.dll": {
-            "assemblyVersion": "3.6.1.0",
-            "fileVersion": "3.6.1.0"
-          }
-        }
-      },
-      "BouncyCastle.Crypto.Reference/1.8.3.0": {
-        "runtime": {
-          "BouncyCastle.Crypto.dll": {
-            "assemblyVersion": "1.8.3.0",
-            "fileVersion": "1.8.18223.1"
-          }
-        }
-      },
-      "Renci.SshNet.Reference/2016.1.0.0": {
-        "runtime": {
-          "Renci.SshNet.dll": {
-            "assemblyVersion": "2016.1.0.0",
-            "fileVersion": "2016.1.0.0"
+          "SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "1.1.12.351",
+            "fileVersion": "1.0.0.0"
           }
         }
       }
@@ -2302,7 +2284,7 @@
     "Microsoft.CSharp/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
+      "sha512": "sha512-580A/dZ72wCtzAEmV+c5hr67IxQzeXrU5nusxoqelfj0u8oguXWNug1dKY7MTzmIgNbjkD0vPio7toI5iw0q7w==",
       "path": "microsoft.csharp/4.0.1",
       "hashPath": "microsoft.csharp.4.0.1.nupkg.sha512"
     },
@@ -2351,7 +2333,7 @@
     "Microsoft.Win32.Registry/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-q+eLtROUAQ3OxYA5mpQrgyFgzLQxIyrfT2eLpYX5IEPlHmIio2nh4F5bgOaQoGOV865kFKZZso9Oq9RlazvXtg==",
+      "sha512": "sha512-4Kkxqp0SquKtBmnyLvjMb9WI3JutcvVHs9n4UsRAFasxkGwSu3RZZlUW/7Sol3XJpB5sLqC/peEtSbfz45D6QA==",
       "path": "microsoft.win32.registry/4.0.0",
       "hashPath": "microsoft.win32.registry.4.0.0.nupkg.sha512"
     },
@@ -2519,7 +2501,7 @@
     "System.Collections.Immutable/1.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Cma8cBW6di16ZLibL8LYQ+cLjGzoKxpOTu/faZfDcx94ZjAGq6Nv5RO7+T1YZXqEXTZP9rt1wLVEONVpURtUqw==",
+      "sha512": "sha512-spbDUlHnDpjhtBWiJ4j+8L39k++d5mfkhbCO80kuuAZAUm1iQHtmfcIZNT7Fdxmz6OjktSK3c/YaWMG0wNyueQ==",
       "path": "system.collections.immutable/1.2.0",
       "hashPath": "system.collections.immutable.1.2.0.nupkg.sha512"
     },
@@ -2589,7 +2571,7 @@
     "System.Diagnostics.Process/4.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-mpVZ5bnlSs3tTeJ6jYyDJEIa6tavhAd88lxq1zbYhkkCu0Pno2+gHXcvZcoygq2d8JxW3gojXqNJMTAshduqZA==",
+      "sha512": "sha512-RE4yiqVtJJGo2UmMrzVsS6gjEdd5OTURQFSRrmRY9I2CpzJt3WzT3EYVr2anhfSFh0KBS36cFeAuY1I+/jjaIw==",
       "path": "system.diagnostics.process/4.1.0",
       "hashPath": "system.diagnostics.process.4.1.0.nupkg.sha512"
     },
@@ -2771,7 +2753,7 @@
     "System.Reflection.Metadata/1.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-jMSCxA4LSyKBGRDm/WtfkO03FkcgRzHxwvQRib1bm2GZ8ifKM1MX1al6breGCEQK280mdl9uQS7JNPXRYk90jw==",
+      "sha512": "sha512-fdVf962gjyIuya9BGGDlOVnoI2jX4Ftx89BiK+ejGIPdVnnHYBvf6o1zaUbpb6FIZ/obpxSz7TEon/oFnrKoIQ==",
       "path": "system.reflection.metadata/1.3.0",
       "hashPath": "system.reflection.metadata.1.3.0.nupkg.sha512"
     },
@@ -2834,7 +2816,7 @@
     "System.Runtime.Loader/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4UN78GOVU/mbDFcXkEWtetJT/sJ0yic2gGk1HSlSpWI0TDf421xnrZTDZnwNBapk1GQeYN7U1lTj/aQB1by6ow==",
+      "sha512": "sha512-AgAl8WTITtH7tHmWgEvQuII9HyCKXR/INaWdVbxYg8RcLEc1R3oHIDLwajnKWEuVeFmgqWamAKyLzCVU7wZceg==",
       "path": "system.runtime.loader/4.0.0",
       "hashPath": "system.runtime.loader.4.0.0.nupkg.sha512"
     },
@@ -2855,7 +2837,7 @@
     "System.Runtime.Serialization.Primitives/4.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-HZ6Du5QrTG8MNJbf4e4qMO3JRAkIboGT5Fk804uZtg3Gq516S7hAqTm2UZKUHa7/6HUGdVy3AqMQKbns06G/cg==",
+      "sha512": "sha512-/mMnxpu1Bx+p5SSgjVK2odBxrzA+3p/cRfTvvlfGWnLEvwL/ztm5vjoJcaMKjVJ+Xknh5IqnH4WIpKOQtzwaDg==",
       "path": "system.runtime.serialization.primitives/4.1.1",
       "hashPath": "system.runtime.serialization.primitives.4.1.1.nupkg.sha512"
     },
@@ -2953,14 +2935,14 @@
     "System.Threading.Thread/4.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gIdJqDXlOr5W9zeqFErLw3dsOsiShSCYtF9SEHitACycmvNvY8odf9kiKvp6V7aibc8C4HzzNBkWXjyfn7plbQ==",
+      "sha512": "sha512-uqf5rz7pvwVEVd0aD3GpA3wSAxN30oF/8NbSsqk1bnoIOLluWuvODzkFk3X0wmWXvRXgjNsBsB+xLcsapAMjIQ==",
       "path": "system.threading.thread/4.0.0",
       "hashPath": "system.threading.thread.4.0.0.nupkg.sha512"
     },
     "System.Threading.ThreadPool/4.0.10": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IMXgB5Vf/5Qw1kpoVgJMOvUO1l32aC+qC3OaIZjWJOjvcxuxNWOK2ZTWWYXfij22NHxT2j1yWX5vlAeQWld9vA==",
+      "sha512": "sha512-7gBMYROagTrXVYf/wmnlQa3BnsAW/yiaGWzXrqVcbPjlZxhsjHL1gy1+qS9AzX/vNl8bkVhUlmB92747F04OOQ==",
       "path": "system.threading.threadpool/4.0.10",
       "hashPath": "system.threading.threadpool.4.0.10.nupkg.sha512"
     },
@@ -3002,7 +2984,7 @@
     "System.Xml.XPath/4.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-UWd1H+1IJ9Wlq5nognZ/XJdyj8qPE4XufBUkAW59ijsCPjZkZe0MUzKKJFBr+ZWBe5Wq1u1d5f2CYgE93uH7DA==",
+      "sha512": "sha512-znA6T57EEZpjhdy8aLkkhcD/UkwseWK+uAdqEBCNzc666x0sgCc6ozaeM24c+B4lUtnxqQw/Yg9Hq4sViwm4oQ==",
       "path": "system.xml.xpath/4.0.1",
       "hashPath": "system.xml.xpath.4.0.1.nupkg.sha512"
     },
@@ -3104,12 +3086,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.EntityFrameworkCore.Reference/2.2.6.0": {
+    "Microsoft.AspNetCore.CookiePolicy.Reference/2.1.2.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.AspNetCore.CookiePolicy.Reference/2.1.2.0": {
+    "Microsoft.EntityFrameworkCore.Reference/2.2.6.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -3179,7 +3161,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "MySql.Data.EntityFrameworkCore.Reference/8.0.18.0": {
+    "Microsoft.EntityFrameworkCore.Sqlite.Reference/2.2.6.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -3459,12 +3441,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "MySql.Data.Reference/8.0.18.0": {
+    "Microsoft.DotNet.PlatformAbstractions.Reference/2.1.0.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.DotNet.PlatformAbstractions.Reference/2.1.0.0": {
+    "Microsoft.Data.Sqlite.Reference/2.2.6.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -3544,17 +3526,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Google.Protobuf.Reference/3.6.1.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "BouncyCastle.Crypto.Reference/1.8.3.0": {
-      "type": "reference",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Renci.SshNet.Reference/2016.1.0.0": {
+    "SQLitePCLRaw.core.Reference/1.1.12.351": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
