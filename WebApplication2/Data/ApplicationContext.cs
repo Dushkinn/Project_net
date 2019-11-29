@@ -16,7 +16,6 @@ namespace WebApplication2.Controllers
         public DbSet<Book> Books { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<BookItem> BookItems { get; set; }
-        public DbSet<BookReservationRequest> BookReservationRequests { get; set; }
         public DbSet<BookType> BookTypes { get; set; }
         public DbSet<Language> Languages { get; set; }
         public DbSet<ReservationBook> ReservationBooks { get; set; }
@@ -46,6 +45,16 @@ namespace WebApplication2.Controllers
             modelBuilder.Entity<Tag>(entity =>
             {
                 entity.HasKey(e => e.ID);
+            });
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasKey(e => e.ID);
+            });
+            modelBuilder.Entity<ReservationBook>(entity =>
+            {
+                entity.HasKey(e => e.ID);
+                entity.HasOne(e => e.User)
+                .WithMany(g => g.ReservationBooks);
             });
         }
 

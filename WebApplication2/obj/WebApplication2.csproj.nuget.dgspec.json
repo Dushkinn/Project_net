@@ -1,25 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nikitadushkin/Projects/Project_net/WebApplication2/WebApplication2.csproj": {}
+    "C:\\Users\\duski\\source\\repos\\WebApplication2\\WebApplication2\\WebApplication2.csproj": {}
   },
   "projects": {
-    "/Users/nikitadushkin/Projects/Project_net/WebApplication2/WebApplication2.csproj": {
+    "C:\\Users\\duski\\source\\repos\\WebApplication2\\WebApplication2\\WebApplication2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nikitadushkin/Projects/Project_net/WebApplication2/WebApplication2.csproj",
+        "projectUniqueName": "C:\\Users\\duski\\source\\repos\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
         "projectName": "WebApplication2",
-        "projectPath": "/Users/nikitadushkin/Projects/Project_net/WebApplication2/WebApplication2.csproj",
-        "packagesPath": "/Users/nikitadushkin/.nuget/packages/",
-        "outputPath": "/Users/nikitadushkin/Projects/Project_net/WebApplication2/obj/",
+        "projectPath": "C:\\Users\\duski\\source\\repos\\WebApplication2\\WebApplication2\\WebApplication2.csproj",
+        "packagesPath": "C:\\Users\\duski\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\duski\\source\\repos\\WebApplication2\\WebApplication2\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "/Users/nikitadushkin/.config/NuGet/NuGet.Config"
+          "C:\\Users\\duski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net461"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -95,7 +100,12 @@
               "version": "[8.0.18, )"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
         }
       }
     }
